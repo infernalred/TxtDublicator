@@ -1,0 +1,10 @@
+D:\Documents\Programming\TxtDublicator\TxtDublicator\obj\Debug\TxtDublicator.csprojAssemblyReference.cache
+D:\Documents\Programming\TxtDublicator\TxtDublicator\obj\Debug\TxtDublicator.Form1.resources
+D:\Documents\Programming\TxtDublicator\TxtDublicator\obj\Debug\TxtDublicator.csproj.GenerateResource.cache
+D:\Documents\Programming\TxtDublicator\TxtDublicator\obj\Debug\TxtDublicator.csproj.CoreCompileInputs.cache
+D:\Documents\Programming\TxtDublicator\TxtDublicator\bin\Debug\EmailDublicator.exe.config
+D:\Documents\Programming\TxtDublicator\TxtDublicator\bin\Debug\EmailDublicator.exe
+D:\Documents\Programming\TxtDublicator\TxtDublicator\bin\Debug\EmailDublicator.pdb
+D:\Documents\Programming\TxtDublicator\TxtDublicator\obj\Debug\EmailDublicator.Properties.Resources.resources
+D:\Documents\Programming\TxtDublicator\TxtDublicator\obj\Debug\EmailDublicator.exe
+D:\Documents\Programming\TxtDublicator\TxtDublicator\obj\Debug\EmailDublicator.pdb

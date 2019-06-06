@@ -1,0 +1,58 @@
+//delete dublicates
+        void DelDubl(string)
+
+
+        //sort by A to Z
+        void SortAZ(string[] sms)
+        {
+
+        }
+
+
+
+
+        void Upload(string [] sms)
+        {
+            List<string> liststr = new List<string>();
+            foreach (var sss in sms)
+            {
+                liststr.Add(sss);
+                richTextBox1.AppendText(string.Format("{0}{1}", sss, "\n"));
+            }
+        }
+
+
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open1 = new OpenFileDialog();
+            open1.Filter = "Text files (*.txt) | *.txt";
+            open1.ShowDialog();
+            open1.OpenFile();
+            label1.Text = open1.FileName;
+            string[] s = File.ReadAllText(open1.FileName, Encoding.Default).Split(new char[] { '\n' });
+            
+            foreach (var ssss in s)
+            {
+                txtstr.Add(ssss + "\n");
+            }
+            richTextBox1.Lines = txtstr.ToArray();
+
+        }
+        
+    }
+
+
+
+    public class TxtString : List<string>
+    {
+
+        public void Parse(string path)
+        {
+            
+        }
+        
+
+    }

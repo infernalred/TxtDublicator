@@ -1,0 +1,35 @@
+@"^[A-Za-z0-9_\-\+]+@[A-Za-z0-9\-]+\.([A-Za-z]{2,3})(?:\.[a-z]{2})?"
+
+Regex parts = new Regex(@"^\d+\t(\d+)\t.+?\t(item\\[^\t]+\.ddj)");
+**************************************************************************************************
+
+@"^\d+\t(\d+)\t.+?\t(item\\[^\t]+\.ddj)"
+
+StreamReader reader = FileInfo.OpenText("filename.txt");
+string line;
+while ((line = reader.ReadLine()) != null) {
+    Match match = parts.Match(line);
+    if (match.Success) {
+        int number = int.Parse(match.Group(1).Value);
+        string path = match.Group(2).Value;
+
+        // At this point, `number` and `path` contain the values we want
+        // for the current line. We can then store those values or print them,
+        // or anything else we like.
+    }
+}
+
+^        Start of string
+\d+      "\d" means "digit" - 0-9. The "+" means "one or more."
+         So this means "one or more digits."
+\t       This matches a tab.
+(\d+)    This also matches one or more digits. This time, though, we capture it
+         using brackets. This means we can access it using the Group method.
+\t       Another tab.
+.+?      "." means "anything." So "one or more of anything". In addition, it's lazy.
+         This is to stop it grabbing everything in sight - it'll only grab as much
+         as it needs to for the regex to work.
+\t       Another tab.
+
+(item\\[^\t]+\.ddj)
+    Here's the meat. This matches: "item\<one or more of anything but a tab>.ddj"

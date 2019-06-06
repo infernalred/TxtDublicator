@@ -1,0 +1,1 @@
+You can't sell, change EMAILDUPLICATOR. if you have not purchased the program immediately close it. About purchase write our email feedback@redware.ru
